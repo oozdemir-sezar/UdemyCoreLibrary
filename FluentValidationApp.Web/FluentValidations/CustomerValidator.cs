@@ -16,7 +16,10 @@ namespace FluentValidationApp.Web.FluentValidations
 
             RuleFor(x => x.Email).NotEmpty().WithMessage("Email alanı boş olamaz").EmailAddress().WithMessage("Email alanı doğru formatta değil");
 
-            RuleFor(x => x.Age).NotEmpty().WithMessage("Age alanı boş olamaz").InclusiveBetween(18, 60).WithMessage("Age alanı 18-60 arasında olmalıdır"); 
+            RuleFor(x => x.Age).NotEmpty().WithMessage("Age alanı boş olamaz").InclusiveBetween(18, 60).WithMessage("Age alanı 18-60 arasında olmalıdır");
+
+
+
 
 
 
